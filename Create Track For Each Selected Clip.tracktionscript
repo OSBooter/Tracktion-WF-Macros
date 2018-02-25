@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MACRO name="Create Track For Each Selected Clip" script="var tracks = Tracktion.getSelectedEditElements ('clip');&#13;&#10;var trackName = Tracktion.getName (tracks[0]);&#13;&#10;&#13;&#10;for (i = 0; i &lt; tracks.length; i++) { &#13;&#10;&#9;Tracktion.insertTrack ('audio');&#13;&#10;&#9;for (j = 0; j &lt; tracks.length - i; j++) {// every round j cycles less&#13;&#10;&#9;&#9;Tracktion.addObjectsToSelection (tracks[j+i]);&#13;&#10;&#9;}&#13;&#10;&#9;Tracktion.nudgeSelected ('down');&#13;&#10;}&#13;&#10;&#13;&#10;&#13;&#10;"
+       key="alt + N"/>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MACRO name="Pull Next Clip To End v2" script="//pushes the next clip to the end of the selected clip&#13;&#10;//affects the in/out markers&#13;&#10;//v2 tries to remedy the marker thing&#13;&#10;var curPos = Tracktion.getPosition ('cursor');&#13;&#10;var markInPos = Tracktion.getPosition ('markIn');&#13;&#10;var markOutPos = Tracktion.getPosition ('markOut');&#13;&#10;Tracktion.markAroundSelected();&#13;&#10;Tracktion.jumpToMarkOut();&#13;&#10;Tracktion.selectItem ('right');&#13;&#10;Tracktion.moveStartOfSelectedClipsToCursor();&#13;&#10;Tracktion.setPosition ('cursor', curPos);&#13;&#10;Tracktion.setPosition ('markIn', markInPos);&#13;&#10;Tracktion.setPosition ('markOut', markOutPos);&#13;&#10;"
+       key="alt + ."/>
